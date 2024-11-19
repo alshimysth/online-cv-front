@@ -1,0 +1,10 @@
+<div class="h-screen w-64 bg-slate-800 text-white flex flex-col" [ngClass]="{ hidden: !sidebarOpen }">
+  <div class="p-4 text-lg font-semibold border-b border-slate-400" >
+    Mon Application
+  </div>
+  <nav class="flex-1 p-4 space-y-2">
+    <a routerLink="/about" class="block p-2 rounded hover:bg-slate-700">About</a>
+    <a routerLink="/educations" class="block p-2 rounded hover:bg-slate-700">Educations</a>
+    <a routerLink="/experiences" class="block p-2 rounded hover:bg-slate-700">Work experiences</a>
+  </nav>
+</div>

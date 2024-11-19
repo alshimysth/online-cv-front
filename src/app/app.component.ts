@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'online-cv-front';
+
+  sidebarOpen:boolean = true;
+
+  toggleSidebar():void {
+    console.log(this.sidebarOpen);
+    this.sidebarOpen = !this.sidebarOpen;
+  }
 }
